@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <string name="Settings__changed_alert">Settings will take place after you restart this app</string>
+
+    <string name="Settings_libraries">Libraries used for Secrecy</string>
+
+    <string name="Settings__credits">Credits</string>
+    <string name="Settings__translators">Translators</string>
+    <string name="Settings__cannot_move_vault">Cannot move vaults</string>
+    <string name="Settings__cannot_move_vault_message">Cannot move into subdirectories, would result in errors.</string>
+    <string name="Settings__move_vault">Move Vaults</string><string name="move_message">Are you sure to move
+    \n\n From: %1$s
+    \n To: %2$s ?</string>
+    <string name="Settings__moved_vault">Moved to: %s</string>
+    <string name="Error__files_exist">Please use empty folder</string>
+    <string name="Error__files_exist_message">To ensure integrity of your files, please choose an empty folder to put your vaults in.</string>
+    <string name="Settings__legal">Legal info</string>
+    <string name="Settings__version">Version name</string>
+    <string name="Settings__about">About</string>
+    <string name="Settings__vault_management">Vault Management</string>
+    <string name="Settings__vault_location">Vault location</string>
+    <string name="Settings__move_all_vaults">Move all vaults</string>
+    <string name="Settings__move_all_vaults_message">Click here to move all your vaults to another location, e.g. External SD</string>
+    <string name="Settings__security">Security</string>
+    <string name="Settings__stealth_mode">Stealth Mode</string>
+    <string name="Settings__stealth_mode_message">Hide this app completely from app launcher. </string>
+    <string name="Settings__stealth_mode_password">Stealth Mode Password</string>
+    <string name="Settings__misc">Miscellaneous</string>
+    <string name="Settings__analytics">Send Usage Analytics</string>
+    <string name="Settings__analytics_message">We only send non-vault related information like device model, Android version, app launch count, etc.</string>
+    <string name="Settings__stealth_explanation">In stealth mode, the app icon is hidden from the app launcher. The only way to enter the app is through dialing your secret code from the dialer. Please choose a secret code easy to remember:</string>
+    <string name="Settings__only_permium"> Only available to donate users</string>
+    <string name="Settings__try_once_before_hide"> Before we go on and hide the app icon, we need to make sure you can launch it in stealth mode. Please go to the dialer and dial the secret code:</string>
+    <string name="Settings__moving_vault">Moving. Please wait…</string>
+    <string name="Error__moving_vault">Error moving vaults</string>
+    <string name="Error__moving_vault_message">We encountered an error. Please try again later.</string>
+    <string name="Settings__select_storage_title">Select Storage:</string>
+</resources>

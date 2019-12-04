@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="card_bg">#fafafa</color>
+    <color name="card_edge">#dcdcdc</color>
+    <color name="activity_bg">#eaeaea</color>
+    <color name="quantum_blue_100">#d0d9ff</color>
+    <color name="quantum_blue_500">#5677fc</color>
+    <color name="quantum_blue_700">#455ede</color>
+    <color name="quantum_deeporange_A200">#ff6e40</color>
+    <color name="quantum_deeporange_A100">#ff9e80</color>
+    <color name="quantum_deeporange_A400">#ff3d00</color>
+
+    <color name="primary">@color/quantum_blue_500</color>
+    <color name="primary_light">@color/quantum_blue_100</color>
+    <color name="primary_dark">@color/quantum_blue_700</color>
+    <color name="accent">@color/quantum_deeporange_A200</color>
+    <color name="accent_light">@color/quantum_deeporange_A100</color>
+    <color name="accent_dark">@color/quantum_deeporange_A400</color>
+
+    <color name="text_secondary">#727272</color>
+</resources>

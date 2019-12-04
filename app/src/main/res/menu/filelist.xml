@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.doplgangr.secrecy.fragments.FilesListFragment">
+
+    <item
+        android:id="@+id/action_add_file"
+        android:icon="@drawable/ic_action_new"
+        android:orderInCategory="1"
+        android:title="@string/action__add_file"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_delete_vault"
+        android:icon="@drawable/ic_action_discard"
+        android:orderInCategory="5"
+        android:title="@string/action__delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_switch_interface"
+        android:icon="@drawable/ic_gallery"
+        android:orderInCategory="2"
+        android:title="@string/action__switch_interface"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_change_passphrase"
+        android:icon="@drawable/ic_action_edit"
+        android:orderInCategory="3"
+        android:title="@string/action__change_password"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_backup"
+        android:icon="@drawable/ic_action_backup"
+        android:orderInCategory="99"
+        android:title="@string/action__backup"
+        app:showAsAction="ifRoom" />
+</menu>

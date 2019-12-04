@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="Error__open_vault">Vault Failed</string>
+    <string name="Error__open_vault_message">The Password is Incorrect, or the vault has been corrupted.</string>
+    <string name="Import__finish">Finish adding files to secrecy.</string>
+    <string name="Notif__files_decrypted">%d file(s) temporarily decrypted for viewing…</string>
+    <string name="Notif__temp_deleted">All temporary files removed.</string>
+    <string name="Error__wrong_password">The password is incorrect! Please check.</string>
+    <string name="Error__file_not_found">The file is not found! Please check.</string>
+    <string name="Error__unknown">It failed. That\'s all we know :(.</string>
+    <string name="Error__no_activity_view">No App handles this type of file.</string>
+    <string name="Error__decrypt_file">Decrypt Failed</string>
+    <string name="Dialog__send_file">Send encrypted files to…</string>
+    <string name="Error__already_decrypting">File is already decrypting</string>
+    <string name="Error__no_file_selected">No file is selected.</string>
+    <string name="Files__add_successful">File successfully added</string>
+    <string name="Files__add_successful_message">Would you like to delete the original file?</string>
+    <string name="Files__adding">Adding files</string>
+    <string name="Files__adding_finish">Finish adding files to secrecy.</string>
+    <string name="Error__already_decrypting_delete">Cannot delete decrypting files</string>
+    <string name="Files__delete">Delete Files</string>
+    <string name="Files__delete_message">Are you sure to delete the following file(s)? %s</string>
+    <string name="Files__number_selected">%d file(s) selected</string>
+    <string name="Files__save_to_SD">All files decrypted successfully and stored to SDCard.</string>
+    <string name="Vault__new">New vault</string>
+    <string name="Error__wrong_password_confirmation">Failed to create new vault</string>
+    <string name="Error__wrong_password_confirmation_message">The password combination is incorrect. Please check.</string>
+    <string name="Error__cannot_create_vault">Failed to create new vault</string>
+    <string name="Error__cannot_create_vault_message">Either the vault already exists, or SDCard is unavailable now.</string>
+    <string name="Error__delete_password_incorrect">Password incorrect.</string>
+    <string name="Error__delete_password_incorrect_message">Deletion is aborted.</string>
+    <string name="Error__rename_password_incorrect">Password incorrect.</string>
+    <string name="Error__rename_password_incorrect_message">Rename is aborted.</string>
+    <string name="Error__decrypting_file">Error decrypting file.</string>
+    <string name="Error__decrypting_file_message">Please try again later.</string>
+    <string name="Error__out_of_memory">Out of memory!</string>
+    <string name="Error__out_of_memory_message">Seems like your device does not have enough power to house that much info. Please select a smaller maximal image size in the settings.</string>
+
+    <string name="Error__root_IOException">Vault location not writable!</string>
+    <string name="Error__root_IOException_message">We cannot access the vault location you have set. Please try again later, or set another vault location.</string>
+    <string name="File__decrypting">Decrypting…</string>
+    <string name="action__decrypt">Decrypt</string>
+    <string name="action__rename">Rename</string>
+    <string name="action__delete">Delete</string>
+    <string name="action__add_file">Add file</string>
+    <string name="action__change_password">Change vault password</string>
+    <string name="action__backup">Backup this vault</string>
+    <string name="File__open">Opening Encrypted File</string>
+    <string name="File__open_message">Please enter password to open this file</string>
+    <string name="Backup__title">Backing Up</string>
+    <string name="Backup__in_progress">Backup in Progress</string>
+    <string name="Backup__finish">Backup Finished. Your backup file is %s.</string>
+    <string name="Restore__title">Restoring</string>
+    <string name="Restore__in_progress">Restore in Progress</string>
+    <string name="Restore__finish">Restore Finished. %s has been restored.</string>
+    <string name="File__rename">New File Name</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    package="com.doplgangr.secrecy">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name=".CustomApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/App__name"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/CustomMaterialTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name=".filesystem.OurFileProvider"
+            android:authorities="com.doplgangr.secrecy.filesystem.DecryptFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <!-- aFileChooser -->
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/Dialog_header__pick_file" />
+        <activity
+            android:name=".activities.FileImportActivity"
+            android:label="@string/Dialog_header__import_files">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ChooseFolder"
+            android:label="@string/Page_header__choose_folder" />
+
+        <receiver android:name=".OutgoingCallReceiver">
+            <intent-filter android:priority="9999">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".views.LauncherActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/App__name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/App__name"></activity>
+        <activity
+            android:name=".activities.FilePhotoActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:label=""
+            android:parentActivityName=".activities.FilesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.FilesActivity" />
+        </activity>
+        <activity
+            android:name=".activities.FilesActivity"
+            android:label=""
+            android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <service
+            android:name=".services.ScreenStateService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

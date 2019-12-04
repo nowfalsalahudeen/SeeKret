@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.doplgangr.secrecy.fragments.FilesListFragment">
+
+
+    <!--<item android:id="@+id/action_send_secure"
+        android:title="Decrypt + Send"
+        android:icon="@drawable/ic_action_send_secure"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/action_rename"
+        android:icon="@drawable/ic_action_edit"
+        android:orderInCategory="1"
+        android:title="@string/action__rename"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_decrypt"
+        android:icon="@drawable/ic_action_not_secure"
+        android:orderInCategory="1"
+        android:title="@string/action__decrypt"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_send"
+        android:icon="@drawable/ic_action_send"
+        android:orderInCategory="2"
+        android:title="@string/abc_shareactionprovider_share_with"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_select_all"
+        android:icon="@drawable/ic_action_select_all"
+        android:orderInCategory="2"
+        android:title="@string/action_select_all"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_action_discard"
+        android:orderInCategory="5"
+        android:title="@string/action__delete"
+        app:showAsAction="always" />
+</menu>

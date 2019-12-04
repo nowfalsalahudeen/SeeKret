@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.doplgangr.secrecy.adapters.VaultsListFragment">
+
+    <item
+        android:id="@+id/action_add_vault"
+        android:icon="@drawable/ic_action_new"
+        android:orderInCategory="1"
+        android:title="@string/action__add_vault"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_restore"
+        android:icon="@drawable/ic_action_restore"
+        android:orderInCategory="99"
+        android:title="@string/action__restore_vault"
+        app:showAsAction="ifRoom" />
+</menu>

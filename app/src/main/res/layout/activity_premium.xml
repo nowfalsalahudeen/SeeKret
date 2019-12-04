@@ -1,0 +1,71 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/Premium__upgrade_button"
+        style="@style/Widget.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_from_edge"
+        android:layout_marginRight="@dimen/margin_from_edge"
+        android:enabled="false"
+        android:text="@string/Donation__buy_button" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_paper"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/margin_text_top"
+        android:paddingLeft="@dimen/margin_from_edge"
+        android:paddingRight="@dimen/margin_from_edge"
+        android:paddingTop="@dimen/margin_text_top">
+
+        <TextView
+            android:id="@+id/Premium__reasons_to_upgrade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Donation__encouragement"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/text_multiline_size" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/Premium__progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Premium__upgrade_button"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

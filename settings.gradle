@@ -1,0 +1,8 @@
+/* Apps*/
+include ':app'
+
+/*Libraries*/
+include':libraries:payme'
+include ':libraries:aFileChooser'
+
+/*Modules*/

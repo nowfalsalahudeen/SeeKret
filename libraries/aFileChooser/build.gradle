@@ -1,0 +1,8 @@
+apply plugin: 'com.android.library'
+apply from: '../../android_commons.gradle'
+
+dependencies {
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+
+}

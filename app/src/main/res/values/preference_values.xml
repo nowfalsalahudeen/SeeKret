@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_image_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="array_vault_sort_values">
+        <item>ALPHABETIC</item>
+        <item>FILETYPE</item>
+        <item>LASTMODIFIED</item>
+    </string-array>
+</resources>

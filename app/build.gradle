@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+apply from: '../android_commons.gradle'
+
+//apt {
+//    arguments {
+//        androidManifestFile variant.outputs[0].processResources.manifestFile
+//        resourcePackageName "com.doplgangr.secrecy"
+//    }
+//}
+
+dependencies {
+
+    implementation project(path: ':libraries:aFileChooser', configuration: 'default')
+    implementation project(path: ':libraries:payme', configuration: 'default')
+
+
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.chrisbanes.photoview:library:1.2.3'
+    implementation 'com.path:android-priority-jobqueue:1.1.2'
+    implementation 'de.greenrobot:eventbus:2.2.0'
+    implementation 'com.google.protobuf:protobuf-java:3.4.0'
+    implementation 'com.madgag.spongycastle:prov:1.51.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
+
+android {
+
+    defaultConfig {
+        applicationId "com.doplgangr.secrecy"
+        versionCode 60
+        versionName "0.6.0"
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="security"
+        android:title="@string/Settings__security">
+        <CheckBoxPreference
+            android:key="stealth_mode"
+            android:summary="@string/Settings__stealth_mode_message"
+            android:title="@string/Settings__stealth_mode"
+            android:defaultValue="false" />
+        <Preference
+            android:dependency="stealth_mode"
+            android:key="stealth_mode_password"
+            android:title="@string/Settings__stealth_mode_password" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="performance"
+        android:title="@string/Settings__performance">
+        <ListPreference
+            android:key="image_size"
+            android:entries="@array/array_image_size_entries"
+            android:entryValues="@array/array_image_size_values"
+            android:defaultValue="0"
+            android:title="@string/Settings_max_image_size"
+        />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="vault"
+        android:title="@string/Settings__vault_management">
+
+        <Preference
+            android:key="vault_root"
+            android:title="@string/Settings__vault_location" />
+        <Preference
+            android:key="vault_move"
+            android:summary="@string/Settings__move_all_vaults_message"
+            android:title="@string/Settings__move_all_vaults" />
+        <ListPreference
+            android:key="vault_sort"
+            android:entries="@array/array_vault_sort_entries"
+            android:entryValues="@array/array_vault_sort_values"
+            android:defaultValue="ALPHABETIC"
+            android:title="@string/Settings_sort_vault_content" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
